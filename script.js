@@ -23,7 +23,7 @@ toggleMobileMenu('burger','nav');
 toggleMobileMenu('burger2','nav2');
 
 /* -------------------------
-   Gallery thumbnails (product page)
+  Gallery thumbnails (product page)
    ------------------------- */
 const thumbs = document.querySelectorAll('.thumb');
 const currentImage = document.getElementById('currentImage');

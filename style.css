@@ -116,6 +116,7 @@ body{
 
 /* -------------------- FORMS -------------------- */
 .form{max-width:640px;margin:1rem auto 0;text-align:left}
+
 .form-row{margin-bottom:0.9rem;display:flex;flex-direction:column}
 .form-row label{font-weight:600;margin-bottom:0.4rem}
 .form-row input,.form-row select{padding:0.65rem;border-radius:8px;border:1px solid #e6e6e6}
