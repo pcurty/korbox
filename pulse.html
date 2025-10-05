@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>KORBOX PULSE — Présentation</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/LOGO DEF.png">
+</head>
+<body>
+  <!-- Header (même que index pour cohérence) -->
+  <header class="header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">
+        <img src="images/LOGO DEF.png" alt="Logo KORBOX" class="logo">
+        <span class="brand-text">KORBOX</span>
+      </a>
+
+      <nav class="nav" id="nav2">
+        <a href="index.html">Boutique</a>
+        <a href="#presentation">Présentation</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#commande" class="btn-nav">Précommander</a>
+      </nav>
+
+      <button id="burger2" class="burger" aria-label="ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Produit -->
+  <main>
+    <section class="section product-hero">
+      <div class="container product-grid">
+        <div class="gallery">
+          <!-- Images de présentation (cliquables) -->
+          <div class="main-image">
+            <img id="currentImage" src="images/image00024.jpeg" alt="KORBOX PULSE - vue 1">
+          </div>
+          <div class="thumbs">
+            <button class="thumb active"><img src="images/image00024.jpeg" alt=""></button>
+            <button class="thumb"><img src="images/image00010.jpeg" alt=""></button>
+            <button class="thumb"><img src="images/image00005.jpeg" alt=""></button>
+            <button class="thumb"><img src="images/image00013.jpeg" alt=""></button>
+            <button class="thumb"><img src="images/image00004.jpeg" alt=""></button>
+          </div>
+        </div>
+
+        <aside class="product-info">
+          <h1>KORBOX PULSE</h1>
+          <p class="tagline">Parce que tout commence par une impulsion. Une décision. Un souffle.</p>
+
+          <div class="price">Précommande • Prix indicatif: <strong>19,90€</strong></div>
+
+          <div class="product-text">
+            <p>
+              C’est un vrai point de départ pour te (re)mettre en mouvement — que ce soit pour courir, marcher, te sentir mieux dans ton corps ou retrouver ton souffle.
+            </p>
+            <ul>
+              <li>Deux snacks sains pour avant ou après ton effort.</li>
+              <li>10 cartes de motivation à tirer avant chaque séance.</li>
+              <li>Un QR CODE pour rejoindre la communauté et découvrir des surprises.</li>
+              <li>Le KORPLAN, ton programme d’entraînement modifiable chaque semaine.</li>
+              <li>Le KORCHALLENGE, pour avancer de manière ludique et motivante.</li>
+            </ul>
+
+            <p><strong>Édition limitée :</strong> seules quelques KORBOX sont disponibles en précommande. Vous serez débités à la commande et l’expédition est prévue fin 2025.</p>
+          </div>
+
+          <div class="product-actions">
+            <button id="openPreorder" class="btn-primary large">Précommander maintenant</button>
+            <a href="index.html" class="btn-outline">Retour boutique</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Section présentation longue & valeurs -->
+    <section id="presentation" class="section gray">
+      <div class="container">
+        <h2>Pourquoi la KORBOX PULSE ?</h2>
+        <p>
+          La KORBOX PULSE est conçue pour t’aider à créer une routine durable, sans te comparer aux autres. Chaque élément est choisi pour rendre le démarrage simple, motivant et concret.
+        </p>
+
+        <div class="grid">
+          <div class="card">
+            <h3>🌱 Éco-responsable</h3>
+            <p>Packaging réduit et matériaux choisis pour limiter l'impact environnemental.</p>
+          </div>
+          <div class="card">
+            <h3>💪 Progression</h3>
+            <p>Le KORPLAN et le KORCHALLENGE aident à progresser semaine après semaine.</p>
+          </div>
+          <div class="card">
+            <h3>🏁 Accessible</h3>
+            <p>Des outils simples pour tous niveaux — l'objectif est d'avancer, pas de se comparer.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMANDE (ancre) -->
+    <section id="commande" class="section">
+      <div class="container center">
+        <h2>Précommande — KORBOX PULSE</h2>
+        <p class="muted">Livraison prévue fin 2025 • Débit à la commande</p>
+
+        <form id="preorderFormProduct" class="form">
+          <div class="form-row">
+            <label for="p_name">Nom complet</label>
+            <input id="p_name" name="name" required placeholder="Jean Dupont">
+          </div>
+
+          <div class="form-row">
+            <label for="p_email">Email</label>
+            <input id="p_email" name="email" type="email" required placeholder="email@exemple.com">
+          </div>
+
+          <div class="form-row">
+            <label for="p_qty">Quantité</label>
+            <input id="p_qty" name="qty" type="number" min="1" value="1" required>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn-primary">Réserver ma PULSE</button>
+          </div>
+        </form>
+
+        <div id="productFormMessage" class="form-message" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="images/LOGO DEF.png" alt="Logo KORBOX" class="logo small">
+        <p>© 2025 KORBOX</p>
+      </div>
+      <div>
+        <p>Contact: <a href="mailto:hello@korbox.example">hello@korbox.example</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

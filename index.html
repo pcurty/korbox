@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>KORBOX — Boutique</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/LOGO DEF.png">
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header class="header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">
+        <img src="images/LOGO DEF.png" alt="Logo KORBOX" class="logo">
+        <span class="brand-text">KORBOX</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#collections">Collections</a>
+        <a href="#about">À propos</a>
+        <a href="#contact">Contact</a>
+        <a class="btn-nav" href="pulse.html">Précommander</a>
+      </nav>
+
+      <button id="burger" class="burger" aria-label="ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero hero-short">
+    <div class="container hero-grid">
+      <div>
+        <h1>KORBOX — L'impulsion qu'il te faut</h1>
+        <p class="lead">Des box pensées pour te remettre en mouvement — durablement, simplement, avec plaisir.</p>
+        <a class="btn-primary" href="pulse.html">Découvrir la KORBOX PULSE</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== COLLECTIONS (LISTE DE BOX) ========== -->
+  <main>
+    <section id="collections" class="section">
+      <div class="container">
+        <h2>Box disponibles</h2>
+        <p class="muted">Éditions limitées — précommande ouverte. Clique sur une box pour la découvrir.</p>
+
+        <div class="products-grid">
+          <!-- Card 1 : Pulse (existant) -->
+          <article class="product-card">
+            <img src="images/image00024.jpeg" alt="KORBOX PULSE - visuel" class="product-img">
+            <div class="product-body">
+              <h3>KORBOX PULSE</h3>
+              <p class="product-excerpt">La box pour reprendre le mouvement : cartes de motivation, snacks sains, programme KORPLAN et plus.</p>
+              <div class="product-actions">
+                <a href="pulse.html" class="btn-outline">Voir la box</a>
+                <a href="#commande" class="btn-primary small">Précommander</a>
+              </div>
+            </div>
+          </article>
+
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== A PROPOS ========== -->
+    <section id="about" class="section gray">
+      <div class="container about-grid">
+        <div>
+          <h2>Notre mission</h2>
+          <p>
+            Aider chacun à créer une routine durable, sans comparaison. Packaging éco-responsable et produits sélectionnés avec soin.
+          </p>
+          <ul>
+            <li>🏃 Objectif : créer du mouvement accessible.</li>
+            <li>🌱 Engagement : matériaux et sélection responsables.</li>
+            <li>⚠️ Édition limitée : précommandes, expédition fin 2025.</li>
+          </ul>
+        </div>
+        <div class="about-image">
+          <img src="images/image00013.jpeg" alt="Valeurs KORBOX">
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PRECOMMANDE (FORM) ========== -->
+    <section id="commande" class="section">
+      <div class="container center">
+        <h2>Précommande</h2>
+        <p class="muted">Tu seras débité à la commande. Livraison prévue fin 2025.</p>
+
+        <form id="preorderForm" class="form">
+          <div class="form-row">
+            <label for="name">Nom complet</label>
+            <input id="name" name="name" required placeholder="Jean Dupont">
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="email@exemple.com">
+          </div>
+
+          <div class="form-row">
+            <label for="product">Box</label>
+            <select id="product" name="product" required>
+              <option value="KORBOX PULSE">KORBOX PULSE</option>
+              <option value="KORBOX BOOST">KORBOX BOOST</option>
+              <option value="KORBOX CALM">KORBOX CALM</option>
+              <option value="KORBOX MINI">KORBOX MINI</option>
+              <option value="PULSE XL">PULSE XL</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="qty">Quantité</label>
+            <input id="qty" name="qty" type="number" min="1" value="1" required>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn-primary">Réserver ma KORBOX</button>
+            <p class="muted small">Nous t’enverrons un email de confirmation. Paiement à la commande.</p>
+          </div>
+        </form>
+
+        <div id="formMessage" class="form-message" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+    <!-- ========== FAQ ============= -->
+    <section id="faq" class="section gray">
+    <div class="container">
+        <h2>FAQ — Questions fréquentes</h2>
+        <div class="faq-list">
+        <details>
+            <summary>Quand vais-je recevoir ma KORBOX ?</summary>
+            <p>Les expéditions sont prévues pour la fin de l’année 2025. Tu recevras un email de suivi dès l’envoi.</p>
+        </details>
+
+        <details>
+            <summary>Puis-je offrir une KORBOX ?</summary>
+            <p>Oui ! Il suffit d’indiquer l’adresse du destinataire lors de la commande. Le packaging ne contient pas le prix.</p>
+        </details>
+
+        <details>
+            <summary>Les produits sont-ils éco-responsables ?</summary>
+            <p>Oui, chaque box est conçue avec des matériaux recyclables et des partenaires engagés.</p>
+        </details>
+
+        <details>
+            <summary>Le paiement est-il débité immédiatement ?</summary>
+            <p>Oui, la précommande entraîne un débit immédiat afin de garantir ta place dans la production limitée.</p>
+        </details>
+        </div>
+    </div>
+    </section>
+
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="images/LOGO DEF.png" alt="Logo KORBOX" class="logo small">
+        <p>© 2025 KORBOX — Édition limitée</p>
+      </div>
+      <div>
+        <p>Contact: <a href="mailto:hello@korbox.example">hello@korbox.example</a></p>
+        <p class="muted small">Packaging éco-responsable • Produits sélectionnés</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
